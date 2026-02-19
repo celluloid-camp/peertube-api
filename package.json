@@ -13,7 +13,7 @@
 		"access": "public"
 	},
 	"scripts": {
-		"build": "pnpm run build:clean && tsc",
+		"build": "pnpm run build:clean && pnpm run generate && tsc",
 		"build:clean": "shx rm -rf ./dist",
 		"generate": "openapi-ts",
 		"clean": "git clean -xdf .cache .turbo dist node_modules",
