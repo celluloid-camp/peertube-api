@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/celluloid-camp/peertube-api/compare/v1.2.0...v1.3.0) (2026-02-19)
+
+
+### Features
+
+* update OpenAPI configuration to use external YAML source, remove deprecated openapi.json file, and enhance client schema definitions for improved compatibility with PeerTube v8.1 ([cbaef68](https://github.com/celluloid-camp/peertube-api/commit/cbaef68e8606134802e2705b0c9b5604fb7b668e))
+
 ## [1.2.0](https://github.com/celluloid-camp/peertube-api/compare/v1.1.0...v1.2.0) (2026-02-19)
 
 
