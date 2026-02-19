@@ -26,8 +26,8 @@ npm install @celluloid/peertube-api
 ### Basic Example
 
 ```typescript
-import { createClient } from '@celluloid/peertube-api';
-import { getVideos } from '@celluloid/peertube-api/client/sdk';
+import { createClient } from '@celluloid/peertube-api/client';
+import { getVideos } from '@celluloid/peertube-api';
 
 const client = createClient({
   baseUrl: 'https://peertube.example.com',
@@ -47,8 +47,8 @@ console.log(response.data);
 ### With Authentication
 
 ```typescript
-import { createClient } from '@celluloid/peertube-api';
-import { getUserInfo } from '@celluloid/peertube-api/client/sdk';
+import { createClient } from '@celluloid/peertube-api/client';
+import { getUserInfo } from '@celluloid/peertube-api';
 
 const client = createClient({
   baseUrl: 'https://peertube.example.com',
@@ -64,7 +64,7 @@ console.log(userInfo.data);
 ### Custom Configuration
 
 ```typescript
-import { createClient } from '@celluloid/peertube-api';
+import { createClient } from '@celluloid/peertube-api/client';
 
 const client = createClient({
   baseUrl: 'https://peertube.example.com',
