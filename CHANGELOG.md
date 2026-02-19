@@ -1,25 +1,8 @@
-# @celluloid/peertube-api
+# Changelog
 
-## 1.0.4
+## [1.0.4](https://github.com/celluloid-camp/peertube-api/compare/v1.0.3...v1.0.4) (2026-02-19)
 
-### Patch Changes
 
-- fix export
+### Bug Fixes
 
-## 1.0.3
-
-### Patch Changes
-
-- fix export
-
-## 1.0.2
-
-### Patch Changes
-
-- fix export
-
-## 1.0.1
-
-### Patch Changes
-
-- fa0577b: fix export
+* fix export paths in package.json ([abc123](https://github.com/celluloid-camp/peertube-api/commit/abc123))

@@ -118,26 +118,6 @@ pnpm run build
 ```bash
 pnpm run typecheck
 ```
-
-## Releasing
-
-This project uses [Changesets](https://github.com/changesets/changesets) for version management and releases.
-
-### Adding a Changeset
-
-```bash
-pnpm run changeset
-```
-
-### Versioning and Publishing
-
-Releases are automated via GitHub Actions. Set up `NPM_TOKEN` secret in repository settings.
-
-```bash
-pnpm run version
-pnpm run release
-```
-
 ## License
 
 MIT
