@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/celluloid-camp/peertube-api/compare/v1.1.0...v1.2.0) (2026-02-19)
+
+
+### Features
+
+* add support for @tanstack/react-query by updating exports and configuration, including new client generation and package dependencies. ([dd0bd3f](https://github.com/celluloid-camp/peertube-api/commit/dd0bd3fd1e7f2b637bda74133f0ef636148f78c2))
+* update module paths and exports for improved consistency and resolution across the project, including adjustments in package.json, tsconfig.json, and various client files. ([ea18993](https://github.com/celluloid-camp/peertube-api/commit/ea18993a350fb27ae1f740c4910dde84bf56482c))
+
 ## [1.1.0](https://github.com/celluloid-camp/peertube-api/compare/v1.0.4...v1.1.0) (2026-02-19)
 
 
