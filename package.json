@@ -4,8 +4,8 @@
 	"license": "MIT",
 	"type": "module",
 	"packageManager": "pnpm@9.0.0",
-	"main": "dist/index.js",
-	"types": "./dist/index.d.ts",
+	"main": "dist/client/index.js",
+	"types": "./dist/client/index.d.ts",
 	"files": [
 		"dist/**/*"
 	],
