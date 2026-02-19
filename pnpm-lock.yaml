@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      '@tsconfig/recommended':
-        specifier: ^1.0.13
-        version: 1.0.13
     devDependencies:
       '@changesets/cli':
         specifier: ^2.27.1
@@ -18,6 +14,9 @@ importers:
       '@hey-api/openapi-ts':
         specifier: ^0.92.0
         version: 0.92.4(typescript@5.9.3)
+      '@tsconfig/recommended':
+        specifier: ^1.0.13
+        version: 1.0.13
       shx:
         specifier: ^0.4.0
         version: 0.4.0
