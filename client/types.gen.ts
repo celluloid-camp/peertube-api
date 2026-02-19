@@ -431,12 +431,6 @@ export type PlaylistElement = {
     video?: Video | null;
 };
 
-export type Thumbnail = {
-    fileUrl?: string;
-    width?: number;
-    height?: number;
-};
-
 export type VideoFile = {
     id?: Id;
     /**
@@ -601,22 +595,8 @@ export type Video = {
      * title of the video
      */
     name?: string;
-    /**
-     * Deprecated in PeerTube v8.1, use thumbnails instead
-     *
-     * @deprecated
-     */
     thumbnailPath?: string;
-    /**
-     * Deprecated in PeerTube v8.1, use thumbnails instead
-     *
-     * @deprecated
-     */
     previewPath?: string;
-    /**
-     * **PeerTube >= 8.1** Array of thumbnails for the video
-     */
-    thumbnails?: Array<Thumbnail>;
     embedPath?: string;
     views?: number;
     likes?: number;
@@ -804,16 +784,7 @@ export type Abuse = {
         endAt?: Date;
         deleted?: boolean;
         blacklisted?: boolean;
-        /**
-         * Deprecated in PeerTube v8.1, use thumbnails instead
-         *
-         * @deprecated
-         */
         thumbnailPath?: string;
-        /**
-         * **PeerTube >= 8.1** Array of thumbnails for the video
-         */
-        thumbnails?: Array<Thumbnail>;
         channel?: VideoChannel;
     };
     createdAt?: Date;
@@ -855,16 +826,7 @@ export type VideoPlaylist = {
     displayName?: string;
     isLocal?: boolean;
     videoLength?: number;
-    /**
-     * Deprecated in PeerTube v8.1, use thumbnails instead
-     *
-     * @deprecated
-     */
     thumbnailPath?: string;
-    /**
-     * **PeerTube >= 8.1** Array of thumbnails for the video
-     */
-    thumbnails?: Array<Thumbnail>;
     privacy?: VideoPlaylistPrivacyConstant;
     type?: VideoPlaylistTypeConstant;
     ownerAccount?: AccountSummary;
@@ -1728,9 +1690,7 @@ export type VideoUploadRequestCommon = {
      */
     thumbnailfile?: Blob | File;
     /**
-     * Deprecated in PeerTube v8.1, use thumbnailfile instead
-     *
-     * @deprecated
+     * Video preview file
      */
     previewfile?: Blob | File;
     videoPasswords?: AddVideoPasswords;
@@ -1753,9 +1713,7 @@ export type VideoUploadRequestResumable = VideoUploadRequestCommon & {
      */
     thumbnailfile?: Blob | File;
     /**
-     * Deprecated in PeerTube v8.1, use thumbnailfile instead
-     *
-     * @deprecated
+     * Video preview file
      */
     previewfile?: Blob | File;
 };
@@ -7036,9 +6994,7 @@ export type PutVideoData = {
          */
         thumbnailfile?: Blob | File;
         /**
-         * Deprecated in PeerTube v8.1, use thumbnailfile instead
-         *
-         * @deprecated
+         * Video preview file
          */
         previewfile?: Blob | File;
         category?: VideoCategorySet;
@@ -7567,9 +7523,7 @@ export type AddLiveData = {
          */
         thumbnailfile?: Blob | File;
         /**
-         * Deprecated in PeerTube v8.1, use thumbnailfile instead
-         *
-         * @deprecated
+         * Live video/replay preview file
          */
         previewfile?: Blob | File;
         privacy?: VideoPrivacySet;
@@ -9602,7 +9556,7 @@ export type GetVideoPlaylistVideosResponses = {
         total?: number;
         data?: Array<{
             /**
-             * Playlist element id
+             * object id for the video
              */
             id?: Id;
             position?: number;

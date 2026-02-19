@@ -1,7 +1,7 @@
 import { defineConfig } from '@hey-api/openapi-ts';
 
 export default defineConfig({
-	input: './openapi.json',
+	input: 'https://raw.githubusercontent.com/Chocobozzz/PeerTube/refs/tags/v8.0.2/support/doc/api/openapi.yaml',
 	output: {
 		path: './client',
 	},

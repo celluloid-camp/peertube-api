@@ -43,7 +43,7 @@ export const passwordSchema = {
     type: 'string',
     format: 'password',
     minLength: 6,
-    maxLength: 50
+    maxLength: 255
 } as const;
 
 export const VideoCategorySetSchema = {
@@ -511,20 +511,6 @@ export const PlaylistElementSchema = {
     }
 } as const;
 
-export const ThumbnailSchema = {
-    properties: {
-        fileUrl: {
-            type: 'string'
-        },
-        width: {
-            type: 'integer'
-        },
-        height: {
-            type: 'integer'
-        }
-    }
-} as const;
-
 export const VideoFileSchema = {
     properties: {
         id: {
@@ -794,21 +780,12 @@ export const VideoSchema = {
             maxLength: 120
         },
         thumbnailPath: {
-            description: 'Deprecated in PeerTube v8.1, use thumbnails instead',
-            deprecated: true,
-            type: 'string'
+            type: 'string',
+            example: '/lazy-static/thumbnails/a65bc12f-9383-462e-81ae-8207e8b434ee.jpg'
         },
         previewPath: {
-            description: 'Deprecated in PeerTube v8.1, use thumbnails instead',
-            deprecated: true,
-            type: 'string'
-        },
-        thumbnails: {
-            description: '**PeerTube >= 8.1** Array of thumbnails for the video',
-            type: 'array',
-            items: {
-                $ref: '#/components/schemas/Thumbnail'
-            }
+            type: 'string',
+            example: '/lazy-static/previews/a65bc12f-9383-462e-81ae-8207e8b434ee.jpg'
         },
         embedPath: {
             type: 'string',
@@ -1298,16 +1275,7 @@ export const AbuseSchema = {
                     type: 'boolean'
                 },
                 thumbnailPath: {
-                    description: 'Deprecated in PeerTube v8.1, use thumbnails instead',
-                    deprecated: true,
                     type: 'string'
-                },
-                thumbnails: {
-                    description: '**PeerTube >= 8.1** Array of thumbnails for the video',
-                    type: 'array',
-                    items: {
-                        $ref: '#/components/schemas/Thumbnail'
-                    }
                 },
                 channel: {
                     $ref: '#/components/schemas/VideoChannel'
@@ -1432,16 +1400,7 @@ export const VideoPlaylistSchema = {
             minimum: 0
         },
         thumbnailPath: {
-            description: 'Deprecated in PeerTube v8.1, use thumbnails instead',
-            deprecated: true,
             type: 'string'
-        },
-        thumbnails: {
-            description: '**PeerTube >= 8.1** Array of thumbnails for the video',
-            type: 'array',
-            items: {
-                $ref: '#/components/schemas/Thumbnail'
-            }
         },
         privacy: {
             $ref: '#/components/schemas/VideoPlaylistPrivacyConstant'
@@ -3349,8 +3308,7 @@ export const VideoUploadRequestCommonSchema = {
             format: 'binary'
         },
         previewfile: {
-            description: 'Deprecated in PeerTube v8.1, use thumbnailfile instead',
-            deprecated: true,
+            description: 'Video preview file',
             type: 'string',
             format: 'binary'
         },
@@ -3408,8 +3366,7 @@ export const VideoUploadRequestResumableSchema = {
                     format: 'binary'
                 },
                 previewfile: {
-                    description: 'Deprecated in PeerTube v8.1, use thumbnailfile instead',
-                    deprecated: true,
+                    description: 'Video preview file',
                     type: 'string',
                     format: 'binary'
                 }
