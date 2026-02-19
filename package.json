@@ -1,21 +1,29 @@
 {
 	"name": "@celluloid/peertube-api",
-	"version": "3.5.0",
+	"version": "1.0.0",
 	"license": "MIT",
 	"type": "module",
+	"packageManager": "pnpm@9.0.0",
 	"main": "dist/index.js",
 	"types": "./dist/index.d.ts",
 	"files": [
 		"dist/**/*"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
-		"build": "npm run build:clean && tsc",
+		"build": "pnpm run build:clean && tsc",
 		"build:clean": "shx rm -rf ./dist",
 		"generate": "openapi-ts",
 		"clean": "git clean -xdf .cache .turbo dist node_modules",
-		"typecheck": "tsc --noEmit --emitDeclarationOnly false"
+		"typecheck": "tsc --noEmit --emitDeclarationOnly false",
+		"changeset": "changeset",
+		"version": "changeset version",
+		"release": "changeset publish"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
 		"@hey-api/openapi-ts": "^0.92.0",
 		"shx": "^0.4.0",
 		"typescript": "^5.9.3"
