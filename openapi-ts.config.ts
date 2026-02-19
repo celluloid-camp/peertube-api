@@ -20,5 +20,9 @@ export default defineConfig({
       name: '@hey-api/sdk',
       transformer: true,
     },
+    {
+      name: '@tanstack/react-query',
+      mutationOptions: true, 
+    }
   ],
 });
