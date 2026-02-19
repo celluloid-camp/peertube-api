@@ -3,6 +3,8 @@
 	"compilerOptions": {
 		"declaration": true,
 		"declarationMap": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitReturns": true,
 		"noUnusedLocals": true,
@@ -13,6 +15,6 @@
 		"target": "ES2022",
 		"lib": ["ES2022", "DOM", "DOM.Iterable"]
 	},
-	"include": ["client/**/*.ts"],
+	"include": ["client/**/*.ts", "index.ts"],
 	"exclude": ["node_modules"]
 }
