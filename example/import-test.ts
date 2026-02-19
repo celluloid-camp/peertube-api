@@ -1,4 +1,4 @@
-import { createClient } from '@celluloid/peertube-api';
+import { createClient } from '@celluloid/peertube-api/client';
 import { getConfig, getVideoCaptions } from '@celluloid/peertube-api';
 
 const client = createClient({

@@ -6,8 +6,12 @@
 	"packageManager": "pnpm@9.0.0",
 	"exports": {
 		".": {
-			"types": "./dist/index.d.ts",
-			"default": "./dist/index.js"
+			"types": "./dist/sdk.gen.d.ts",
+			"default": "./dist/sdk.gen.js"
+		},
+		"./client": {
+			"types": "./dist/client/client.gen.d.ts",
+			"default": "./dist/client/client.gen.js"
 		}
 	},
 	"files": [
