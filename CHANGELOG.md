@@ -1,5 +1,11 @@
 # @celluloid/peertube-api
 
+## 1.0.4
+
+### Patch Changes
+
+- fix export
+
 ## 1.0.3
 
 ### Patch Changes

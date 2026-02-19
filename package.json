@@ -1,11 +1,20 @@
 {
 	"name": "@celluloid/peertube-api",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"license": "MIT",
 	"type": "module",
 	"packageManager": "pnpm@9.0.0",
-	"main": "dist/index.js",
-	"types": "./dist/index.d.ts",
+	"exports": {
+		"./client": {
+			"types": "./dist/client/index.d.ts",
+			"default": "./dist/client/index.js"
+		},
+		".": {
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
+		},
+		"./package.json": "./package.json"
+	},
 	"files": [
 		"dist/**/*"
 	],
