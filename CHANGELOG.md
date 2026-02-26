@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/celluloid-camp/peertube-api/compare/v1.4.0...v1.4.1) (2026-02-26)
+
+
+### Bug Fixes
+
+* update types entry in package.json to point to the correct generated types and default files for improved module resolution ([91806ce](https://github.com/celluloid-camp/peertube-api/commit/91806ce974f3c7aaf3f1165b20af041906633916))
+
 ## [1.4.0](https://github.com/celluloid-camp/peertube-api/compare/v1.3.0...v1.4.0) (2026-02-26)
 
 
