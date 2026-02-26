@@ -18,8 +18,8 @@
 			"default": "./dist/client/client.gen.js"
 		},
 		"./types": {
-			"types": "./dist/client/types.gen.d.ts",
-			"default": "./dist/client/types.gen.js"
+			"types": "./dist/types.gen.d.ts",
+			"default": "./dist/types.gen.js"
 		}
 	},
 	"files": [
