@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/celluloid-camp/peertube-api/compare/v1.3.0...v1.4.0) (2026-02-26)
+
+
+### Features
+
+* add types entry for client types in package.json to improve type definitions and module resolution ([dab26d2](https://github.com/celluloid-camp/peertube-api/commit/dab26d25b4c7905e654dbfd8493e90b377ea19d5))
+
 ## [1.3.0](https://github.com/celluloid-camp/peertube-api/compare/v1.2.0...v1.3.0) (2026-02-19)
 
 
